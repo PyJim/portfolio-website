@@ -117,7 +117,7 @@ img {
 }
 
 .change-theme:hover{
-  color: var(--first-color);
+  transform: scale(1.25);
 }
 
 /*========== Variables Light theme ==========*/
@@ -135,12 +135,21 @@ body.light-theme{
 .light-theme .scroll-header{
   box-shadow: 0 2px 4px hsla(0, 0%, 1%, .1);
 }
+.light-theme .change-theme:hover{
+  color: rgb(255, 170, 0);
+}
+.light-theme .light-theme-button{
+  color: var(--title-color);
+}
 
 .light-theme .nav__menu{
   background-color: hsla(var(--second-hue), 32%, 90%, .8);
 }
 .light-theme .section__subtitle{
   color: var(--text-color);
+}
+.light-theme .section__title{
+  color: var(--title-color);
 }
 .light-theme .home__social-link{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
@@ -151,10 +160,14 @@ body.light-theme{
   background-color: var(--title-color);
 }
 
+.light-theme .active-link {
+  background-color: var(--title-color);
+  color: var(--first-color);
+
+}
+
 .light-theme .home__social-link,
 .light-theme .home__scroll,
-.light-theme .button,
-.light-theme .button:hover,
 .light-theme .active-work,
 .light-theme .footer__title,
 .light-theme .footer__link,
@@ -162,17 +175,62 @@ body.light-theme{
 .light-theme .nav__logo{
   color: var(--title-color);
 }
+.light-theme .home__social-link:hover{
+  color: var(--container-color);
+  background-color: var(--title-color);
+}
+
+.light-theme .button{
+  background-color: var(--title-color);
+  color: var(--first-color);
+}
+
+.light-theme .button--ghost {
+  border: 3px solid var(--title-color);
+  background-color: transparent;
+  color: var(--text-color);
+}
 
 .light-theme .about__box{
   box-shadow: 0 2px 8px hsla(var(--second-hue), 48%, 8%, .1);
 }
+.light-theme .about__icon,
+.light-theme .services__button,
+.light-theme .skills__title,
+.light-theme .skills__data i,
+.light-theme .work__button,
+.light-theme .swiper-pagination,
+.light-theme .services__modal-title,
+.light-theme .services__modal-close,
+.light-theme .services__modal-icon,
+.light-theme .contact__button-icon,
+.light-theme .contact__button{
+  color: var(--title-color);
+}
 
+.light-theme .services__modal-description{
+  color: var(--text-color);
+}
 .light-theme .skills__content,
 .light-theme .services__card,
 .light-theme .work__card,
 .light-theme .testimonial__card,
 .light-theme .contact__card{
   box-shadow: 0 2px 16px hsla(var(--second-hue), 48%, 8%, .1);
+}
+
+.light-theme .active-work{
+  color: var(--container-color);
+  background-color: var(--title-color);
+}
+
+.swiper-pagination-bullet {
+  background-color: var(--text-color-light);
+}
+
+.swiper-pagination-bullet-active,
+.light-theme .swiper-pagination-bullet{
+  background-color: var(--title-color);
 }
 
 .light-theme::-webkit-scrollbar{
@@ -385,7 +443,7 @@ body.light-theme{
 
 .home__social-link:hover{
   background-color: var(--first-color);
-  color: #fff;
+  color: var(--container-color);
 }
 
 .home__social::after{
@@ -984,14 +1042,13 @@ body.light-theme{
   }
 
   .services__container{
-    grid-template-columns: repeat(2, 160px);
-    justify-content: space-around;
+    grid-template-columns: repeat(2, 200px);
   }
   .services__card{
-    margin: auto;
-    width: 250px;
+    margin: 0;
+    width: 200px;
     height: 200px;
-    padding: auto;
+    padding: 2.25rem;
     align-items: center;
   }
   .services__modal-content{
@@ -1127,10 +1184,6 @@ body.light-theme{
   .services__container{
     grid-template-columns: repeat(3, 192px);
     column-gap: 3rem;
-  }
-
-  .services__card{
-    padding: auto;
   }
 
   .work__container{
