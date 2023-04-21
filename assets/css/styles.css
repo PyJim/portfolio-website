@@ -882,6 +882,10 @@ body.light-theme{
   font-size: 1rem;
   display: inline-flex;
 }
+.footer__social-link:hover{
+  transform: scale(1.4);
+  transition: .4s;
+}
 
 .footer__copy{
   display: block;
