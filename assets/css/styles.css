@@ -330,21 +330,26 @@ body.light-theme{
 }
 
 .home__img{
-  width: 160px;
+  width: 45px;
+  height: 45px;
 }
 
+.home__img:hover{
+  transform: scale(1.2);
+  opacity: 1;
+  transition: .5s;
+}
 .home__handle{
   justify-self: center;
-  width: 190px;
-  height: 293px;
-  background: linear-gradient(180deg,
-              hsla(var(--first-hue), var(--sat), var(--lig), 1),
-              hsla(var(--first-hue), var(--sat), var(--lig), .2)
-            );
-  border-radius: 10rem 10rem 1rem 1rem;
+  width: 250px;
+  margin-top: 50px;
+  margin-bottom: 50px;
+  border-radius: 1rem;
+  padding: 0 1rem;
+  height: 55px;
   display: flex;
-  align-items: flex-end;
-  justify-content: center;
+  align-items: center;
+  justify-content: space-between;
   overflow: hidden;
 }
 
@@ -425,8 +430,7 @@ body.light-theme{
 }
 
 .button:hover{
-  background-color: var(--first-color-alt);
-  color: var(--body-color);
+  transform: scale(1.2);
 }
 .button--ghost{
   background-color: transparent;
@@ -535,12 +539,16 @@ body.light-theme{
   grid-template-columns: repeat(2, 1fr);
   gap: 1.5rem;
   padding-top: 1rem;
+  justify-content: center;
 }
 
 .services__card{
   background-color: var(--container-color);
-  padding: 3rem 1.5rem 1.5rem;
+  padding: 1rem;
   border-radius: 1rem;
+  width: 200px;
+  justify-self: center;
+  text-align: center;
 }
 
 .services__title{
@@ -555,6 +563,7 @@ body.light-theme{
   align-items: center;
   column-gap: .25rem;
   cursor: pointer;
+  justify-content: center;
 }
 
 .services__button:hover .services__icon{
@@ -833,17 +842,18 @@ body.light-theme{
   resize: none;
 }
 /*=============== FOOTER ===============*/
-.footer{
-  background-color: var(--first-color);
-}
-
 .footer__container{
   padding: 2rem 0 6rem;
+  border-top: 0.5px solid var(--first-color-alt);
 }
 
 .footer__title,
 .footer__link{
-  color: var(--body-color);
+  color: var(--first-color);
+}
+.footer__list li:hover{
+  transform: scale(1.3);
+  transition: .3s;
 }
 
 .footer__title{
@@ -865,8 +875,8 @@ body.light-theme{
 }
 
 .footer__social-link{
-  background-color: var(--body-color);
-  color: var(--first-color);
+  background-color: var(--first-color);
+  color: var(--body-color);
   padding: .25rem;
   border-radius: .25rem;
   font-size: 1rem;
@@ -876,7 +886,7 @@ body.light-theme{
 .footer__copy{
   display: block;
   margin-top: 4.5rem;
-  color: var(--container-color);
+  color: var(--first-color);
   text-align: center;
   font-size: var(--small-font-size);
 }
@@ -907,12 +917,12 @@ body.light-theme{
   }
 
   .home__handle{
-    width: 150px;
-    height: 253px;
+    width: 250px;
   }
-
+  
   .home__img{
-    width: 130px;
+    width: 40px;
+    height: 40px;
   }
 
   .about__info{
@@ -926,7 +936,7 @@ body.light-theme{
   .skills__name{
     font-size: var(--small-font-size);
   }
-
+  
   .services__container{
     grid-template-columns: 145px;
     justify-content: center;
@@ -971,12 +981,18 @@ body.light-theme{
 
   .services__container{
     grid-template-columns: repeat(2, 160px);
-    justify-content: center;
+    justify-content: space-around;
   }
-
+  .services__card{
+    margin: auto;
+    width: 250px;
+    height: 200px;
+    padding: auto;
+    align-items: center;
+  }
   .services__modal-content{
     width: 500px;
-    padding: 4.5rem 2.5rem 2.5rem;
+    align-self: center;
   }
 
   .services__modal-description{
@@ -1000,11 +1016,30 @@ body.light-theme{
     width: 360px;
     margin: 0 auto;
   }
+
+  .home__handle {
+    width: 350px;
+    height: 65px;
+  }
+
+  .home__img {
+    width: 45px;
+    height: 45px;
+  }
 }
 
 @media screen and (min-width: 767px) {
   .work__container{
     grid-template-columns: repeat(2, max-content);
+  }
+  .home__handle {
+    width: 400px;
+    height: 75px;
+  }
+
+  .home__img {
+    width: 50px;
+    height: 50px;
   }
 
   .contact__container{
@@ -1012,6 +1047,7 @@ body.light-theme{
     justify-content: center;
     column-gap: 3rem;
   }
+  
 }
 
 /* For large devices */
@@ -1033,13 +1069,14 @@ body.light-theme{
     height: calc(var(--header-height) + 1rem);
   }
 
-  .home__handle{
-    width: 290px;
-    height: 400px;
+  .home__handle {
+    width: 450px;
+    height: 80px;
   }
 
-  .home__img{
-    width: 220px;
+  .home__img {
+    width: 55px;
+    height: 55px;
   }
 
   .home__social-link{
@@ -1089,7 +1126,7 @@ body.light-theme{
   }
 
   .services__card{
-    padding: 5rem 2rem 1.5rem;
+    padding: auto;
   }
 
   .work__container{
