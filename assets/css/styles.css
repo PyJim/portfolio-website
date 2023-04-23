@@ -547,6 +547,8 @@ body.light-theme{
 
 .about__description{
   margin-bottom: 2rem;
+  text-align: justify;
+  justify-self: center;
 }
 /*=============== SKILLS ===============*/
 .skills__container{
