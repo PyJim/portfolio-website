@@ -785,7 +785,7 @@ body.light-theme{
 .testimonial__img{
   width: 60px;
   height: 60px;
-  border-radius: 49%;
+  border-radius: 50%;
   margin-bottom: 1rem;
 }
 
