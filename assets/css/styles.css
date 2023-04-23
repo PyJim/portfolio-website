@@ -506,6 +506,8 @@ body.light-theme{
   border-radius: 1.5rem;
   justify-self: center;
   margin-bottom: 2rem;
+  opacity: 0.6;
+  background-color: var(--container-color);
 }
 
 .about__data{
