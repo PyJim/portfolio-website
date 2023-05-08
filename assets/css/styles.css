@@ -685,9 +685,11 @@ body.light-theme{
 .services__modal-item{
   display: flex;
   align-items: flex-start;
-  column-gap: .5rem;
+  column-gap: .2rem;
 }
-
+.services__modal-item p{
+  text-align: left;
+}
 .services__modal-icon{
   font-size: 1.5rem;
   color: var(--first-color);
