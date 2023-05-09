@@ -689,6 +689,7 @@ body.light-theme{
 }
 .services__modal-item p{
   text-align: left;
+  margin-left: 50px;
 }
 .services__modal-icon{
   font-size: 1.5rem;
@@ -743,6 +744,7 @@ body.light-theme{
 .work__img{
   border-radius: 1rem;
   margin-bottom: .75rem;
+  height: 200px;
 }
 
 .work__title{
@@ -1015,6 +1017,9 @@ body.light-theme{
     justify-content: center;
   }
 
+  .services__modal-item p {
+    margin-left: 10px;
+  }
   .work__item{
     font-size: var(--small-font-size);
   }
@@ -1069,6 +1074,10 @@ body.light-theme{
 
   .services__modal-description{
     padding: 0 3.5rem;
+  }
+
+  .services__modal-item p {
+    margin-left: 30px;
   }
 
   .work__container{
