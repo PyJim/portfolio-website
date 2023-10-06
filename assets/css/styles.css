@@ -363,7 +363,7 @@ body.light-theme{
 /*=============== HOME ===============*/
 .home__container{
   position: relative;
-  row-gap: 4.5rem;
+  row-gap: 1rem;
   padding-top: 2rem;
 }
 
@@ -404,11 +404,9 @@ body.light-theme{
 .home__handle{
   justify-self: center;
   width: 250px;
-  margin-top: 50px;
-  margin-bottom: 50px;
   border-radius: 1rem;
   padding: 0 1rem;
-  height: 55px;
+  height: 45px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -745,6 +743,7 @@ body.light-theme{
   border-radius: 1rem;
   margin-bottom: .75rem;
   height: 200px;
+  width: 100%;
 }
 
 .work__title{
